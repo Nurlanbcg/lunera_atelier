@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Lunera Atelier — Fərdi Moda</title>
+  <meta name="description"
+    content="Hər bir müştəri üçün fərdi olaraq hazırlanmış eksklüziv əl işi geyimləri. Lunera Atelier fərdi, gəlinlik və axşam modası təklif edir." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">Lunera Atelier</a>
+      <button class="header__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="nav">
+        <a href="#services" class="header__link" data-i18n="nav_couture">Geyimlər</a>
+        <a href="#process" class="header__link" data-i18n="nav_process">Proses</a>
+        <a href="#lookbook" class="header__link" data-i18n="nav_lookbook">Kolleksiya</a>
+        <a href="#atelier" class="header__link" data-i18n="nav_atelier">Atelye</a>
+        <a href="#faq" class="header__link" data-i18n="nav_faq">FAQ</a>
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-switcher__btn active" data-lang="az">AZ</button>
+          <span class="lang-switcher__divider">|</span>
+          <button class="lang-switcher__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#booking" class="header__cta-btn" data-i18n="nav_cta">Konsultasiya</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="/images/hero.png" alt="Lunera Atelier couture fashion editorial" />
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__tagline reveal" data-i18n="hero_tagline">Xüsusi Olanlar Üçün Yaradılmışdır</p>
+      <h1 class="hero__title reveal" data-i18n-html="hero_title">Fərdi Tikilmiş Geyimlər.<br />Yalnız Sizin Üçün.</h1>
+      <p class="hero__subtitle reveal" data-i18n="hero_subtitle">Hər bir müştəri üçün xüsusi olaraq hazırlanan əl işi
+        geyimləri.</p>
+      <div class="hero__buttons reveal">
+        <a href="#booking" class="btn btn--primary" data-i18n="hero_btn_consult">Konsultasiya Alın</a>
+        <a href="#lookbook" class="btn btn--secondary" data-i18n="hero_btn_lookbook">Kolleksiyaya Baxın</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-mouse__dot"></div>
+      </div>
+      <span class="scroll-mouse__label" data-i18n="hero_scroll">Aşağı</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SIGNATURE SERVICES ═══════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-label reveal" data-i18n="services_label">Xidmətlərimiz</p>
+      <h2 class="section-title reveal" data-i18n="services_title">Əsas Xidmətlər</h2>
+      <div class="services__grid">
+        <article class="service-card reveal">
+          <div class="service-card__image">
+            <img src="/images/couture-bespoke.png" alt="Fərdi Geyimlər" loading="lazy" />
+          </div>
+          <div class="service-card__content">
+            <h3 data-i18n="service1_title">Fərdi Geyimlər</h3>
+            <p data-i18n="service1_desc">Sizin ölçülərinizə və zövqünüzə uyğun bir nüsxədə hazırlanan unikal geyimlər.
+            </p>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-card__image">
+            <img src="/images/bridal-couture.png" alt="Gəlinlik Geyimləri" loading="lazy" />
+          </div>
+          <div class="service-card__content">
+            <h3 data-i18n="service2_title">Gəlinlik Geyimləri</h3>
+            <p data-i18n="service2_desc">Zəriflik, romantika və zamansız gözəlliyi özündə birləşdirən əsrarəngiz gəlin
+              paltarları.</p>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-card__image">
+            <img src="/images/evening-occasion.png" alt="Axşam və Mərasim Geyimləri" loading="lazy" />
+          </div>
+          <div class="service-card__content">
+            <h3 data-i18n="service3_title">Axşam və Mərasim Geyimləri</h3>
+            <p data-i18n="service3_desc">Qala gecələri, qırmızı xalı tədbirləri və həyatınızın ən xüsusi anları üçün
+              geyimlər.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WHY LUNERA ═══════════════ -->
+  <section class="why" id="why">
+    <div class="container">
+      <p class="section-label reveal" data-i18n="why_label">Nə İlə Fərqlənirik</p>
+      <h2 class="section-title reveal" data-i18n="why_title">Niyə Lunera Atelier?</h2>
+      <div class="why__grid">
+        <div class="why__item reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" />
+            </svg>
+          </div>
+          <h3 data-i18n="why1_title">Əl İşi İncəliklər</h3>
+          <p data-i18n="why1_desc">Hər bir tikiş, muncuq və bəzək elementi əl ilə, son dərəcə diqqətlə yerləşdirilir.
+          </p>
+        </div>
+        <div class="why__item reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="6" width="36" height="36" rx="4" />
+              <path d="M6 18h36M18 6v36" />
+            </svg>
+          </div>
+          <h3 data-i18n="why2_title">Yüksək Keyfiyyətli Parçalar</h3>
+          <p data-i18n="why2_desc">Ən məşhur fabriklərdən seçilmiş premium materiallar.</p>
+        </div>
+        <div class="why__item reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="16" r="10" />
+              <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" />
+            </svg>
+          </div>
+          <h3 data-i18n="why3_title">Şəxsi Sınaq Seansları</h3>
+          <p data-i18n="why3_desc">Geyimin bədəninizə mükəmməl oturmasını təmin etmək üçün bir neçə fərdi sınaq görüşü.
+          </p>
+        </div>
+        <div class="why__item reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="20" />
+              <path d="M24 12v12l8 8" />
+            </svg>
+          </div>
+          <h3 data-i18n="why4_title">Məhdud Sayda Sifariş</h3>
+          <p data-i18n="why4_desc">Hər müştəriyə maksimum diqqət ayırmaq üçün aylıq sifariş sayımızı məhdudlaşdırırıq.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BESPOKE PROCESS ═══════════════ -->
+  <section class="process" id="process">
+    <div class="container">
+      <p class="section-label reveal" data-i18n="process_label">Yolunuz</p>
+      <h2 class="section-title reveal" data-i18n="process_title">Fərdi Sifariş Prosesi</h2>
+      <p class="section-subtitle reveal" data-i18n="process_subtitle">İlk görüşdən son təqdimata qədər hər bir mərhələ
+        peşəkarlıq və şəxsi yanaşma ilə həyata keçirilir.</p>
+      <div class="process__steps">
+        <div class="process__line"></div>
+        <div class="process__step reveal">
+          <div class="process__number">01</div>
+          <h3 data-i18n="process1_title">Konsultasiya</h3>
+          <p data-i18n="process1_desc">İstək və zövqünüzü anlamaq üçün fərdi görüş.</p>
+        </div>
+        <div class="process__step reveal">
+          <div class="process__number">02</div>
+          <h3 data-i18n="process2_title">Dizayn və Eskiz</h3>
+          <p data-i18n="process2_desc">Atelyemiz eskizlər hazırlayır və sizə uyğun parçaları seçir.</p>
+        </div>
+        <div class="process__step reveal">
+          <div class="process__number">03</div>
+          <h3 data-i18n="process3_title">Sınaq Seansları</h3>
+          <p data-i18n="process3_desc">Geyimi mükəmməl hala gətirmək üçün bir neçə sınaq görüşü.</p>
+        </div>
+        <div class="process__step reveal">
+          <div class="process__number">04</div>
+          <h3 data-i18n="process4_title">Təhvil</h3>
+          <p data-i18n="process4_desc">Hazır əsəriniz xüsusi qablaşdırma ilə sizə təqdim olunur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ LOOKBOOK ═══════════════ -->
+  <section class="lookbook" id="lookbook">
+    <div class="container">
+      <p class="section-label reveal" data-i18n="lookbook_label">Kolleksiyalar</p>
+      <h2 class="section-title reveal" data-i18n="lookbook_title">Kolleksiya</h2>
+      <div class="lookbook__grid">
+        <div class="lookbook__item reveal" data-category="Couture">
+          <img src="/images/lookbook-1.png" alt="Fərdi kolleksiya" loading="lazy" />
+          <div class="lookbook__overlay">
+            <span data-i18n="lookbook_couture">Fərdi</span>
+          </div>
+        </div>
+        <div class="lookbook__item reveal" data-category="Evening">
+          <img src="/images/lookbook-2.png" alt="Axşam kolleksiyası" loading="lazy" />
+          <div class="lookbook__overlay">
+            <span data-i18n="lookbook_evening">Axşam</span>
+          </div>
+        </div>
+        <div class="lookbook__item reveal" data-category="Bridal">
+          <img src="/images/lookbook-3.png" alt="Gəlinlik kolleksiyası" loading="lazy" />
+          <div class="lookbook__overlay">
+            <span data-i18n="lookbook_bridal">Gəlinlik</span>
+          </div>
+        </div>
+        <div class="lookbook__item reveal" data-category="Couture">
+          <img src="/images/lookbook-4.png" alt="Fərdi kolleksiya" loading="lazy" />
+          <div class="lookbook__overlay">
+            <span data-i18n="lookbook_couture">Fərdi</span>
+          </div>
+        </div>
+        <div class="lookbook__item reveal" data-category="Evening">
+          <img src="/images/lookbook-5.png" alt="Axşam kolleksiyası" loading="lazy" />
+          <div class="lookbook__overlay">
+            <span data-i18n="lookbook_evening">Axşam</span>
+          </div>
+        </div>
+        <div class="lookbook__item reveal" data-category="Bridal">
+          <img src="/images/lookbook-6.png" alt="Gəlinlik kolleksiyası" loading="lazy" />
+          <div class="lookbook__overlay">
+            <span data-i18n="lookbook_bridal">Gəlinlik</span>
+          </div>
+        </div>
+      </div>
+      <div class="lookbook__cta reveal">
+        <a href="#booking" class="btn btn--outline" data-i18n="lookbook_cta">Bütün Kolleksiyaya Baxın</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ATELIER STORY ═══════════════ -->
+  <section class="atelier" id="atelier">
+    <div class="container">
+      <div class="atelier__inner">
+        <div class="atelier__text reveal">
+          <p class="section-label" data-i18n="atelier_label">Haqqımızda</p>
+          <h2 class="section-title" data-i18n="atelier_title">Atelye</h2>
+          <p class="atelier__narrative" data-i18n="atelier_p1">
+            Lunera Atelier bir inamla qurulub: hər qadın öz hekayəsi qədər unikal bir geyimə layiqdir. Atelyemiz
+            sənətkarlıq məbədidir — qədim ustalıq ənənələri müasir baxışla birləşir.
+          </p>
+          <p class="atelier__narrative" data-i18n="atelier_p2">
+            Hər sifariş bir söhbətlə başlayır və saatlarla davam edən əl tikişi, drapaj və bəzəkləmə ilə forma alır. Biz
+            yalnız dünyanın ən nüfuzlu fabriklərindən gətirilən ipək, krujeva və tikmə parçalarla işləyirik.
+          </p>
+          <p class="atelier__narrative" data-i18n="atelier_p3">
+            Fəlsəfəmiz sadədir: güzəştsiz eksklüzivlik. Hər müştəriyə tam diqqətimizi ayıra bilmək üçün sifarişlərimizi
+            məhdudlaşdırırıq. Hər bir parça yalnız bir geyim deyil, sənət əsəridir.
+          </p>
+        </div>
+        <div class="atelier__visual reveal">
+          <img src="/images/couture-bespoke.png" alt="Lunera Atelier daxili" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══════════════ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <p class="section-label reveal" data-i18n="faq_label">Suallarınız</p>
+      <h2 class="section-title reveal" data-i18n="faq_title">Tez-tez Verilən Suallar</h2>
+      <div class="faq__list">
+        <details class="faq__item reveal">
+          <summary class="faq__question">
+            <span data-i18n="faq1_q">Fərdi sifariş nə qədər vaxt aparır?</span>
+            <span class="faq__icon">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p data-i18n="faq1_a">Standart geyim sifarişi ilk konsultasiyadan təhvilə qədər 8–12 həftə çəkir. Gəlin
+              paltarları üçün çoxsaylı sınaqlar və incə əl işinə görə 12–16 həftə lazım ola bilər. Tədbirinizə ən azı 6
+              ay qalmış müraciət etməyinizi tövsiyə edirik.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">
+            <span data-i18n="faq2_q">Geyimin qiyməti nə qədərdir?</span>
+            <span class="faq__icon">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p data-i18n="faq2_a">Qiymətlər istifadə olunan material və işçiliyin keyfiyyətinə uyğundur. Dəqiq qiymət
+              fərdi konsultasiya zamanı müzakirə edilir və dizaynın mürəkkəbliyinə, parça seçiminə və bəzək
+              elementlərinə görə dəyişir.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">
+            <span data-i18n="faq3_q">Xaricdən sifariş vermək mümkündür?</span>
+            <span class="faq__icon">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p data-i18n="faq3_a">Bəli, biz dünyanın hər yerindən müştəriləri qəbul edirik. İlk konsultasiya onlayn
+              keçirilə bilər. Sınaqlar üçün görüş təşkil edə və ya müxtəlif şəhərlərdəki tərəfdaş atelyələrlə əməkdaşlıq
+              edə bilərik.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">
+            <span data-i18n="faq4_q">Neçə sınaq seansı olacaq?</span>
+            <span class="faq__icon">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p data-i18n="faq4_a">Adətən 3–4 fərdi sınaq seansı keçirilir. Hər seans zamanı silüet dəqiqləşdirilir,
+              detallar tənzimlənir və son nəticənin mükəmməl olması təmin edilir.</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary class="faq__question">
+            <span data-i18n="faq5_q">Öz dizayn ideyalarımı gətirə bilərəm?</span>
+            <span class="faq__icon">+</span>
+          </summary>
+          <div class="faq__answer">
+            <p data-i18n="faq5_a">Əlbəttə! Müştərilərimizi ilham lövhələri, eskizlər və ya nümunə şəkillər paylaşmağa
+              dəvət edirik. Dizaynerlərimiz ideyalarınızı sizə xas unikal bir dizayna çevirəcək.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BOOKING / CONSULTATION ═══════════════ -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <div class="booking__info reveal">
+          <p class="section-label" data-i18n="booking_label">Səyahətinizə Başlayın</p>
+          <h2 class="section-title" data-i18n="booking_title">Konsultasiya Sifariş Edin</h2>
+          <p class="booking__description" data-i18n="booking_desc">
+            Hər bir şah əsər bir söhbətlə başlayır. İstəklərinizi bizimlə bölüşün, biz sizin üçün əvəzsiz bir geyim
+            yaradacağıq.
+          </p>
+          <a href="https://wa.me/994123456789" target="_blank" rel="noopener" class="btn btn--whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span data-i18n="booking_whatsapp">WhatsApp ilə Əlaqə</span>
+          </a>
+        </div>
+        <form class="booking__form reveal" id="consultationForm">
+          <div class="form-group">
+            <label for="name" data-i18n="form_name">Ad və Soyad</label>
+            <input type="text" id="name" name="name" data-i18n-placeholder="form_name_placeholder"
+              placeholder="Adınız və soyadınız" required />
+          </div>
+          <div class="form-group">
+            <label for="contact" data-i18n="form_contact">Əlaqə Nömrəsi</label>
+            <input type="text" id="contact" name="contact" data-i18n-placeholder="form_contact_placeholder"
+              placeholder="+994 (XX) XXX-XX-XX" required />
+          </div>
+          <div class="form-group">
+            <label for="eventDate" data-i18n="form_date">Tədbir Tarixi</label>
+            <input type="text" id="eventDate" name="eventDate" placeholder="DD/MM/YYYY" pattern="\d{2}/\d{2}/\d{4}"
+              data-i18n-placeholder="form_date_placeholder" />
+          </div>
+          <div class="form-group">
+            <label for="category" data-i18n="form_category">Kateqoriya</label>
+            <select id="category" name="category" required>
+              <option value="" disabled selected data-i18n="form_category_default">Kateqoriya seçin</option>
+              <option value="bridal" data-i18n="form_category_bridal">Gəlinlik Geyimi</option>
+              <option value="evening" data-i18n="form_category_evening">Axşam və Mərasim Geyimi</option>
+              <option value="couture" data-i18n="form_category_couture">Fərdi Geyim</option>
+            </select>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="message" data-i18n="form_message">Mesajınız</label>
+            <textarea id="message" name="message" rows="4" data-i18n-placeholder="form_message_placeholder"
+              placeholder="İstək və fikirlərinizi qeyd edin..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">Sorğu Göndərin</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">Lunera Atelier</a>
+          <p data-i18n="footer_desc">Ehtiras, dəqiqlik və mükəmməlliyə bağlılıqla əl ilə hazırlanmış kutyur geyimləri.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4 data-i18n="footer_links">Keçidlər</h4>
+          <a href="#services" data-i18n="nav_couture">Geyimlər</a>
+          <a href="#process" data-i18n="nav_process">Proses</a>
+          <a href="#lookbook" data-i18n="nav_lookbook">Kolleksiya</a>
+          <a href="#atelier" data-i18n="nav_atelier">Atelye</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        </div>
+        <div class="footer__social">
+          <h4 data-i18n="footer_connect">Əlaqə</h4>
+          <a href="https://www.instagram.com/luneraatelier/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
+            Instagram
+          </a>
+          <a href="https://wa.me/994123456789" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp
+          </a>
+          <a href="mailto:info@luneraatelier.az" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 4L12 13 2 4" />
+            </svg>
+            info@luneraatelier.az
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer_rights">&copy; 2026 Lunera Atelier. Bütün hüquqlar qorunur.</p>
+        <div class="footer__legal">
+          <a href="#" data-i18n="footer_privacy">Məxfilik Siyasəti</a>
+          <a href="#" data-i18n="footer_terms">İstifadə Şərtləri</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal__content">
+      <div class="modal__icon">✓</div>
+      <h3 data-i18n="modal_title">Təşəkkür Edirik!</h3>
+      <p data-i18n="modal_text">Sorğunuz qəbul edildi. 24 saat ərzində sizinlə əlaqə saxlanılacaq.</p>
+      <button class="btn btn--primary" id="modalClose" data-i18n="modal_close">Bağla</button>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
