@@ -105,7 +105,7 @@ export const translations = {
         form_submit: "Sorğu Göndərin",
 
         // Footer
-        footer_desc: "Ehtiras, dəqiqlik və mükəmməlliyə bağlılıqla əl ilə hazırlanmış kutyur geyimləri.",
+        footer_desc: "Ehtiras, dəqiqlik və mükəmməlliyə bağlılıqla əl ilə hazırlanmış geyimlər.",
         footer_links: "Keçidlər",
         footer_connect: "Əlaqə",
         footer_rights: "© 2026 Lunera Atelier. Bütün hüquqlar qorunur.",
